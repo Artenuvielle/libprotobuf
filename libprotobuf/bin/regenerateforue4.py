@@ -12,8 +12,8 @@ include_allow_header = '#include "AllowWindowsPlatformTypes.h"'
 include_hide_header = '#include "HideWindowsPlatformTypes.h"'
 disable_warning_for_includes = '#pragma warning(disable:4800)'
 default_warning_for_includes = '#pragma warning(default:4800)'
-disable_warning_for_file = '#pragma warning(disable:4125)'
-default_warning_for_file = '#pragma warning(default:4125)'
+disable_warning_for_file = '#pragma warning(disable:4125)\n#pragma warning(disable:4800)'
+default_warning_for_file = '#pragma warning(default:4125)\n#pragma warning(disable:4800)'
 
 def Check(_CodeFile):
     if (os.path.isfile(_CodeFile) is False):

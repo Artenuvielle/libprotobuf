@@ -181,7 +181,7 @@ subprocess.call([devenv_path, "protobuf.sln", "/Build", "Release|x64", "/Project
 
 
 #copy library files
-apply_patch_for_port_h()
-apply_patch_for_type_traits_h()
+#apply_patch_for_port_h()
+#apply_patch_for_type_traits_h()
 copy_library()
 
